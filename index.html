@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>確率統計の計算ページ</title>
+</head>
+
+<body>
+    <header>
+        <h1>確率統計に出てくる計算</h1>
+    </header>
+
+    <div class="aaa">
+        <h2>確率分布（X=k）</h2>
+        <p>n：試行回数　p：確率</p>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="n">n：</label></th>
+                    <td><input type="text" id="n"></td>
+
+                    <th><label for="r">p：</label></th>
+                    <td><input type="text" id="p"></td>
+
+                    <th><label for="r">k：</label></th>
+                    <td><input type="text" id="k"></td>
+
+                </tr>
+
+            </table>
+
+            <div class="buttonwrap"><button id="button1">計算</button></div>
+        </form>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th><label for="ex_result">期待値</label></th>
+                    <td><input type="text" id="ex_result"></td>
+
+                    <th><label for="vx_result">分散</label></th>
+                    <td><input type="text" id="vx_result"></td>
+
+                    <th><label for="h_result">標準偏差</label></th>
+                    <td><input type="text" id="h_result"></td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <h3>二項分布（X=k）</h3>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th><label for="ncr_result">nCr</label></th>
+                    <td><input type="text" id="ncr_result"></td>
+
+                    <th><label for="kkou_result">k項</label></th>
+                    <td><input type="text" id="kkou_result"></td>
+
+                </tr>
+            </table>
+
+        </div>
+
+        <h3>Poisson分布（X=k）</h3>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th><label for="poisson_result">k項</label></th>
+                    <td><input type="text" id="poisson_result"></td>
+
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <div class="aaa">
+        <h2>標準化</h2>
+        <p>X：確率変数　n：試行回数　p：確率</p>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="X">X：</label></th>
+                    <td><input type="text" id="X"></td>
+                    <th><label for="n2">n：</label></th>
+                    <td><input type="text" id="n2"></td>
+                    <th><label for="p2">p：</label></th>
+                    <td><input type="text" id="p2"></td>
+                </tr>
+            </table>
+
+            <div class="buttonwrap"><button id="button2">計算</button></div>
+        </form>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th><label for="t_result">標準化</label></th>
+                    <td><input type="text" id="t_result"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="aaa">
+        <h2>情報エントロピー</h2>
+        <p>W：場合の数</p>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="W">W：</label></th>
+                    <td><input type="text" id="W"></td>
+                </tr>
+            </table>
+
+            <div class="buttonwrap"><button id="button3">計算</button></div>
+        </form>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th><label for="W_result">情報量</label></th>
+                    <td><input type="text" id="W_result"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="js/kadai3.js"></script>
+</body>
+
+</html>
